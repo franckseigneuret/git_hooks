@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="./styles.css" rel="stylesheet">
-    <title>git rebase trainning</title>
-  </head>
-  <body>
-    <h1>Part 1</h1>
-    <h2>Part 1.a</h2>
-    <ul>
-      <li>abc</li>
-      <li>def</li>
-      <li>hij</li>
-    </ul>
-    <h2>Part 1.b</h2>
-    <ul>
-      <li>abc</li>
-      <li>def</li>
-      <li>hij</li>
-    </ul>
-    <h1>Part 2</h1>
-    <h2>Part 2.a</h2>
-    <ul>
-      <li>abc</li>
-      <li>def</li>
-    </ul>
-    <h2>Part 2.b</h2>
-    <ul>
-      <li>abc</li>
-      <li>def</li>
-    </ul>
 
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nesciunt, culpa voluptatem error aspernatur sint blanditiis. Asperiores ducimus aliquam ex ratione, culpa similique sed temporibus. Quis nam expedita nostrum nobis.
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="./styles.css" rel="stylesheet">
+  <title>git hook</title>
+</head>
+
+<body>
+  <h1>Hook git</h1>
+  <h2>Husky</h2>
+  <p>
+    se concentre sur ce qui est autour du commit (avant, après, qualité...)<br />
+    outils à implémenter au hook husky
+    <ul>
+      <li>d'analyse et formatage syntaxique du code <a href="https://github.com/okonet/lint-staged">https://github.com/okonet/lint-staged</a></li>
+      <li>d'analyse des messages de commit <a href="https://commitlint.js.org/">https://commitlint.js.org/</a></li>
+      <li>d'analyse du nom de branche <a href="https://github.com/JsonMa/validate-branch-name">https://github.com/JsonMa/validate-branch-name</a></li>
+      <li>d'analyse des contenus commités <a href="https://github.com/mbrehin/git-precommit-checks/blob/master/README_fr.md">https://github.com/mbrehin/git-precommit-checks/blob/master/README_fr.md</a></li>
+    </ul>
+  </p>
+  <p>
+    utilise core.hooksPath qui est un élément de configuration (voir le fichier .git/config)
+  </p>
+
+  <h3>installation</h3>
+  avec version node > 14<br />
+  npm init -y<br />
+  npm install --save-dev husky<br />
+</body>
+
 </html>
