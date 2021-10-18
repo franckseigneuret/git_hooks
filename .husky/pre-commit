@@ -3,3 +3,4 @@
 
 echo "Hey, tu commit 🥸 ? tu as le droit 🤔 ?"
 npx --no-install lint-staged
+npx --no-install git-precommit-checks

@@ -46,6 +46,14 @@
   npx eslint --init (lance un questionnaire pour définir la config d'eslint au sein du projet --> créer le fichier .eslintrc.js)<br>
 
 
+  <h3>Ajout de l'outil git-precommit-checks</h3>
+  npm install --save-dev git-precommit-checks<br>
+
+  créer le fichier git-precommit-checks.config.js qui contient les règles<br>
+  npx husky add .husky/pre-commit 'npx --no-install git-precommit-checks'<br>
+  
+
+
 </body>
 
 </html>
