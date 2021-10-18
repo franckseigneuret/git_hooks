@@ -35,6 +35,13 @@
   npm set-script prepare 'husky install' (ajoute le script "prepare": "husky install" au package)<br />
   npx husky add .husky/pre-commit "echo 'Commit en cours !'" // ajout d’un hook ajouté à GIT
 
+  <h3>Lint-staged</h3>
+  verif les syntaxes du code qui vient d'être ajouté sur GIT et le formate si besoin<br>
+  on va coupler cet outil avec 2 autres outils : eslint et prettier.<br>
+  but : accord des syntaxes<br>
+
+  <br>
+  npm install --save-dev lint-staged
 
 </body>
 
