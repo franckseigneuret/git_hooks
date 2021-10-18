@@ -1,0 +1,19 @@
+{
+    "colorTabs.config": [
+        {
+            "regex": "frontend/.*"      
+        },
+    
+        {
+                    "regex": ".*/web/.*"
+                },
+        {
+            "regex": ".*/mobile/.*"
+        }
+    ],
+    "[markdown]": {
+
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": false
+    }
+}
