@@ -6,6 +6,8 @@ Flickity.prototype._createResizeClass = function () {
   this.element.classList.add("flickity-resize");
 };
 
+// TODO : ceci devrait remonter
+
 Flickity.createMethods.push("_createResizeClass");
 
 var resize = Flickity.prototype.resize;
@@ -169,5 +171,5 @@ const multiBlocs = (el) => {
     console.log("next");
   }
 };
-
+// FIXME: finir ce travail
 export default multiBlocs;
