@@ -12,6 +12,8 @@
 <body>
   <h1>Hook git</h1>
   <h2>Husky</h2>
+  <a href="https://www.youtube.com/watch?v=z413go1R55s">https://www.youtube.com/watch?v=z413go1R55s</a><br />
+  <a href="https://delicious-insights.com/fr/articles/git-hooks-et-husky/">https://delicious-insights.com/fr/articles/git-hooks-et-husky/</a>
   <p>
     se concentre sur ce qui est autour du commit (avant, après, qualité...)<br />
     outils à implémenter au hook husky
@@ -30,6 +32,10 @@
   avec version node > 14<br />
   npm init -y<br />
   npm install --save-dev husky<br />
+  npm set-script prepare 'husky install' (ajoute le script "prepare": "husky install" au package)<br />
+  npx husky add .husky/pre-commit "echo 'Commit en cours !'" // ajout d’un hook ajouté à GIT
+
+
 </body>
 
 </html>

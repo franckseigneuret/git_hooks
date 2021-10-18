@@ -1,0 +1,4 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🤜 Yeah, ton commit il est trop BG™ ! 🤛"
