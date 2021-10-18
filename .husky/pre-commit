@@ -2,3 +2,4 @@
 . "$(dirname "$0")/_/husky.sh"
 
 echo "Hey, tu commit 🥸 ? tu as le droit 🤔 ?"
+npx --no-install lint-staged

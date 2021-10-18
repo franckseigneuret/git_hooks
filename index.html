@@ -28,20 +28,23 @@
     utilise core.hooksPath qui est un élément de configuration (voir le fichier .git/config)
   </p>
 
-  <h3>installation</h3>
+  <h3>Installation Husky</h3>
   avec version node > 14<br />
   npm init -y<br />
   npm install --save-dev husky<br />
   npm set-script prepare 'husky install' (ajoute le script "prepare": "husky install" au package)<br />
   npx husky add .husky/pre-commit "echo 'Commit en cours !'" // ajout d’un hook ajouté à GIT
 
-  <h3>Lint-staged</h3>
-  verif les syntaxes du code qui vient d'être ajouté sur GIT et le formate si besoin<br>
+  <h3>Ajout de l'outil Lint-staged</h3>
+  Cet outil verifie les syntaxes du code qui vient d'être ajouté sur GIT et le formate si besoin<br>
   on va coupler cet outil avec 2 autres outils : eslint et prettier.<br>
-  but : accord des syntaxes<br>
 
   <br>
-  npm install --save-dev lint-staged
+  npm install --save-dev lint-staged<br>
+  npx husky add .husky/pre-commit 'npx --no-install lint-staged'<br>
+  npm install --save-dev eslint standard prettier eslint-config-prettier eslint-plugin-prettier (installation des outils spécifiés plus haut, de la convention d'Eslint "Standard JS", des passereles entre le tout)<br>
+  npx eslint --init (lance un questionnaire pour définir la config d'eslint au sein du projet --> créer le fichier .eslintrc.js)<br>
+
 
 </body>
 
