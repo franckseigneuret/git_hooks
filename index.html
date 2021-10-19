@@ -36,6 +36,8 @@
   npx husky add .husky/pre-commit "echo 'Commit en cours !'" // ajout d’un hook ajouté à GIT
 
   <h3>Ajout de l'outil Lint-staged</h3>
+  <a href="https://delicious-insights.com/fr/articles/git-hooks-et-lint-staged/">https://delicious-insights.com/fr/articles/git-hooks-et-lint-staged/</a><br>
+  <a href="https://www.youtube.com/watch?v=y-ZFrkQbjSc">https://www.youtube.com/watch?v=y-ZFrkQbjSc</a><br>
   Cet outil verifie les syntaxes du code qui vient d'être ajouté sur GIT et le formate si besoin<br>
   on va coupler cet outil avec 2 autres outils : eslint et prettier.<br>
 
@@ -47,18 +49,31 @@
 
 
   <h3>Ajout de l'outil git-precommit-checks</h3>
+  <a href="https://delicious-insights.com/fr/articles/git-hooks-et-validation-de-contenus/">https://delicious-insights.com/fr/articles/git-hooks-et-validation-de-contenus/</a><br>
+  <a href="https://www.youtube.com/watch?v=OiJU_RFxCuo">https://www.youtube.com/watch?v=OiJU_RFxCuo</a><br>
   npm install --save-dev git-precommit-checks<br>
 
+  <p>
+    définit des règles d’analyse pour remonter un warning ou une erreur sur le code qui vient d’être ajouté ou modifié. il peut bloque le commit
+  </p>
   créer le fichier git-precommit-checks.config.js qui contient les règles<br>
   npx husky add .husky/pre-commit 'npx --no-install git-precommit-checks'<br>
   
   <h3>Améliorez les messages de commits avec commitlint et commitizen</h3>
-  <a href="https://www.youtube.com/watch?v=w_LRr_sVrz4">https://www.youtube.com/watch?v=w_LRr_sVrz4</a>
-  <a href="https://delicious-insights.com/fr/articles/git-hooks-et-commitlint/">https://delicious-insights.com/fr/articles/git-hooks-et-commitlint/</a>
+  <a href="https://delicious-insights.com/fr/articles/git-hooks-et-commitlint/">https://delicious-insights.com/fr/articles/git-hooks-et-commitlint/</a><br>
+  <a href="https://www.youtube.com/watch?v=w_LRr_sVrz4">https://www.youtube.com/watch?v=w_LRr_sVrz4</a><br>
 
+  <p>Linter les messages commit en se réfèrant à une convention, soit existante (Commits Conventionnels) soit créée dans la société.</p>
   npm install --save-dev @commitlint/cli @commitlint/config-conventional<br>
-
+  
   créer le fichier commitlint.config.js qui renseigne la lib config-conventional suivi pour l'analyse<br>
+
+  <p>
+    commizen <br>
+    outillage pour accompagner la saisie de message
+  </p>
+  npm install --save-dev commitizen @commitlint/cz-commitlint<br>
+  commitizen n'a pas de fichier config, il faut mettre les infos dans package.json<br>
    
 </body>
 
